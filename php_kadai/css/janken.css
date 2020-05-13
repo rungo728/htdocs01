@@ -1,0 +1,38 @@
+/* 全体 */
+
+/* この下から記述 */
+p{
+  text-align: center;
+}
+.choice {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.actions{
+  text-align: center;
+}
+.actions button {
+  width: 200px;
+  height: 50px;
+  background-color: #e0b9b7;
+  border: 1px solid #e0b9b7;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.actions button:hover{
+  background-color: black;
+  color: #fff;
+}
+.result {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.info {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.
