@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>じゃんけんアプリ</title>
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/janken.css" />
+    <link rel="stylesheet" href="css/app.css" />
   </head>
   <body>
     <?php
@@ -30,27 +30,27 @@
         // 勝敗判定
         //グーの場合
         if ($player === 'グー' && $com === 'チョキ') {
-            $result = '勝ち';
+            $result = '<img src="img/win1.png" style="width:400px;">';
         } elseif ($player === 'グー' && $com === 'グー') {
-            $result = 'あいこ';
+            $result = '<img src="img/hikiwake1.jpeg">';
         } elseif ($player === 'グー' && $com === 'パー') {
-            $result = '負け';
+            $result = '<img src="img/lose2.jpeg">';
         }
         //チョキの場合
         if ($player === 'チョキ' && $com === 'パー') {
-          $result = '勝ち';
+          $result = '<img src="img/win1.png" style="width:400px;">';
         } elseif ($player === 'チョキ' && $com === 'チョキ') {
-            $result = 'あいこ';
+            $result = '<img src="img/hikiwake1.jpeg">';
         } elseif ($player === 'チョキ' && $com === 'グー') {
-            $result = '負け';
+            $result = '<img src="img/lose2.jpeg">';
         }
         //パーの場合
         if ($player === 'パー' && $com === 'グー') {
-          $result = '勝ち';
+          $result = '<img src="img/win1.png" style="width:400px;">';
         } elseif ($player === 'パー' && $com === 'パー') {
-            $result = 'あいこ';
+            $result = '<img src="img/hikiwake1.jpeg">';
         } elseif ($player === 'パー' && $com === 'チョキ') {
-            $result = '負け';
+            $result = '<img src="img/lose2.jpeg">';
         }
       }
     ?>
@@ -58,9 +58,9 @@
       <h1 class="choice">３つの中から一つ選んでください。</h1>
 
       <form action="" method="post" class="actions">
-          <button type="submit" name="choice" value="グー">グー</button>
-          <button type="submit" name="choice" value="チョキ">チョキ</button>
-          <button type="submit" name="choice" value="パー">パー</button>
+        <button type="submit" name="choice" value="グー"><img src="img/gu1.jpeg" alt="" ></button>
+        <button type="submit" name="choice" value="チョキ"><img src="img/choki1.png" alt="" ></button>
+        <button type="submit" name="choice" value="パー"><img src="img/pa1.png" alt="" ></button>
       </form>
     </div>
 
